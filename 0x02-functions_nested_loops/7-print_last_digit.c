@@ -1,17 +1,20 @@
-#include "holberton.h"
+#include "main.h"
+#include <limits.h>
 
 /**
- *print_last_digit - extract last number of a variable
- *@i: variable where we extract last number
- *Return: i if succesful
+ *print_last_digit - prints the last digit of a number
+ *@num: number to get the last digit of
+ *Return: returns an integer
  */
-
-int print_last_digit(int i)
+int print_last_digit(int num)
 {
-	i %= 10;
-	if (i < 0)
-		i *= -1;
-	i += 48;
-	_putchar(i);
-	return (i - '0');
+	int lastDigit;
+
+	if (num == INT_MIN)
+		num += 1000;
+	if (num < 0)
+		num *= -1;
+	lastDigit = num % 10;
+	_putchar(lastDigit + '0');
+	return (lastDigit);
 }
