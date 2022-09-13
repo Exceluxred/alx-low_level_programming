@@ -1,7 +1,7 @@
 #include "excel.h"
 
 /**
- *main - print holberton
+ *main - print excel
  *Return: 0 if succesful
  */
 int main(void)
