@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include "main.h"
+#include <limits.h>
 
 /**
  *times_table - prints out the 9 times table, starting with 0
