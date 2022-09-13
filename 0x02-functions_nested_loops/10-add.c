@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include "main.h"
+#include <limits.h>
 
 /**
  *add - prints out the addition of two numbers
