@@ -1,17 +1,17 @@
-#include <stdlib.h>
 #include <stdio.h>
-/* more headers goes there */
-
 /**
- *main - prints every number from 0 to 9
- *Return: returns 0
+ *main - Entry point
+ *
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
+	int nums;
 
-	for (i = 0; i < 10; ++i)
-		printf("%d", i);
-		printf("\n");
+	for (nums = 0; nums < 10; nums++)
+	{
+		printf("%d", nums);
+	}
+	putchar('\n');
 	return (0);
 }

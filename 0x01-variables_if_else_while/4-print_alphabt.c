@@ -1,19 +1,21 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
 /**
- *main - prints all leters of the alphabet except 'e' amd 'q'
- *Return: retuens nothing
+ *main - Entry point
+ *
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
+	char abc;
 
-	for (i = 'a'; i <= 'z'; i++)
-	if (i != 'e' && i != 'q')
-		putchar(i);
-		putchar('\n');
+	for (abc = 'a'; abc <= 'z'; abc++)
+	{
+		if (abc == 'q' || abc == 'e')
+		{
+			continue;
+		}
+		putchar(abc);
+	}
+	putchar('\n');
 	return (0);
 }
