@@ -1,18 +1,21 @@
-#include<stdio.h>
-
+#include <stdio.h>
 /**
- *main - two loops that print the alphabet lower and upper case
- *Return: returns 0
+ *main - Entry point
+ *
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
-	int j;
+	char abc;
 
-	for (i = 'a'; i <= 'z'; i++)
-		putchar(i);
-	for (j = 'A'; j <= 'Z'; j++)
-		putchar(j);
-		putchar('\n');
+	for (abc = 'a'; abc <= 'z'; abc++)
+	{
+		putchar(abc);
+	}
+	for (abc = 'A'; abc <= 'Z'; abc++)
+	{
+		putchar(abc);
+	}
+	putchar('\n');
 	return (0);
 }
