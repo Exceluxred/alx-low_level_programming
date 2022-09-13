@@ -1,15 +1,17 @@
-#include<stdio.h>
-
+#include <stdio.h>
 /**
- *main - the main function
- *Return: returns 0
+ *main - Entry point
+ *
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
+	char abc;
 
-	for (i = 'a'; i <= 'z'; i++)
-		putchar(i);
-		putchar('\n');
+	for (abc = 'a'; abc <= 'z'; abc++)
+	{
+		putchar(abc);
+	}
+	putchar('\n');
 	return (0);
 }
