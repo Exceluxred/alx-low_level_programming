@@ -1,4 +1,5 @@
-#include "excel.h"
+#include "main.h"
+
 /**
  *print_times_table - prints out the n times table, starting with 0
  *@n: times table
