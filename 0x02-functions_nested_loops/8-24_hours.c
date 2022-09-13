@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include "main.h"
+#include <limits.h>
 
 /**
  *jack_bauer - prints out every minute of the day
